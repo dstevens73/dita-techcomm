@@ -3,10 +3,11 @@
  "reference.dtd">
 <reference id="glossSurfaceForm" xml:lang="en-us">
   <title><xmlelement>glossSurfaceForm</xmlelement></title>
-  <shortdesc>The <xmlelement>glossSurfaceForm</xmlelement> element
-    specifies an unambiguous presentation of the term that might combine
-    multiple forms. The surface form is suitable to introduce the term in
-    new contexts or the first occurrence in text.</shortdesc>
+  <shortdesc>The <xmlelement>glossSurfaceForm</xmlelement> element specifies an unambiguous
+    presentation of the term that might combine multiple forms. The surface form is suitable to
+    introduce the term in new contexts or the first occurrence in text.<draft-comment
+      author="dawnstevens">I'm not fond of this description at all. first sentence is really
+      difficult to understand.</draft-comment></shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -35,7 +36,9 @@
     <section id="specialization-hierarchy">
       <title>Specialization hierarchy</title>
       <p>The <xmlelement>glossSurfaceForm</xmlelement> element is specialized from
-          <xmlelement>p</xmlelement>. It is defined in the glossary entry module.</p>
+          <xmlelement>p</xmlelement>. It is defined in the glossary entry module.<draft-comment
+          author="dawnstevens">this actually surprised me. seems like it would be ph since it is
+          used as a phrase when introducing a first occurrence.</draft-comment></p>
     </section>
     <section id="attributes">
       <title>Attributes</title>
@@ -43,14 +46,12 @@
     </section>
     <example id="example" otherprops="examples">
       <title>Example</title>
-      <p>The following glossary entry topic defines the term "Anti-lock
-        Braking System". Within the topic, the
-          <xmlelement>glossSurfaceForm</xmlelement> element provides a
-        version of the term that combines both the primary term and the
-        acronym. The content of the
-          <xmlelement>glossSurfaceForm</xmlelement> might be rendered in
-        introductory contexts when the glossary entry topic is referenced
-        from an <xmlelement>abbreviate-form</xmlelement> element.</p>
+      <p>The following glossary entry topic defines the term "Anti-lock Braking System". Within the
+        topic, the <xmlelement>glossSurfaceForm</xmlelement> element provides a version of the term
+        that combines both the primary term and the acronym. The content of the
+          <xmlelement>glossSurfaceForm</xmlelement> might be rendered in introductory contexts when
+        the glossary entry topic is referenced from an <xmlelement>abbreviated-form</xmlelement>
+        element.</p>
       <codeblock>&lt;glossentry id="abs">
   &lt;glossterm>Anti-lock Braking System&lt;/glossterm>
   &lt;glossBody>

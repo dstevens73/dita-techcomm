@@ -5,7 +5,13 @@
   <shortdesc>The <xmlelement>glossStatus</xmlelement> element identifies the usage status of a
     preferred or alternate term. If the status is not specified, the
       <xmlelement>glossterm</xmlelement> provides a preferred term and an alternate term provides an
-    allowed term.</shortdesc>
+    allowed term.<draft-comment author="dawnstevens">I think the second sentence is not normative.
+      it would be up to the company choosing to use it. this is written as though all &lt;glossterm>
+      elements are preferred. is that the expectation? I checked glossterm topic and yes, that is
+      the expectation. is that a fallacy? I could use dita to create a dictionary. all terms in the
+      dictionary are not preferred. I might define a term that is not preferred so that a user who
+      has heard the alternative word knows what it means. Elsewhere we call it a primary, not a
+      preferred, term.</draft-comment></shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -38,9 +44,9 @@
     </section>
     <example id="example" otherprops="examples">
       <title>Example</title>
-      <p>The following code sample shows how the
-          <xmlelement>glossStatus</xmlelement> element identifies the usage
-        status of  alternate terms:</p>
+      <p>The following code sample shows how the <xmlelement>glossStatus</xmlelement> element
+        identifies the usage status of alternate terms:<draft-comment author="dawnstevens">can we
+          come up with an example with other values besides prohibited?</draft-comment></p>
       <codeblock>&lt;glossentry id="usbfd">
   &lt;glossterm>USB flash drive&lt;/glossterm>
   &lt;glossdef>A small portable drive.&lt;/glossdef>
